@@ -14,7 +14,11 @@ pipeline{
         } 
         stage('Staging Environment'){
             steps{
+
            //  sh 'firebase deploy -P file-8d723 --token "$FIREBASE_DEPLOY_TOKEN"'
+
+         
+
              echo  'Building'
             }
         } 
