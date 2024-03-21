@@ -8,7 +8,7 @@ pipeline{
        
         stage('Testing Environment'){
             steps{
-            sh 'firebase deploy -P hifi-30b70 --token"$FIREBASE_DEPLOY_TOKEN"'
+            sh 'firebase deploy -P hifi-30b70 --token "$FIREBASE_DEPLOY_TOKEN"'
             
             }
         } 
