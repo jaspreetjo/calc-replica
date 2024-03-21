@@ -15,7 +15,7 @@ pipeline{
         stage('Staging Environment'){
             steps{
 
-           //  sh 'firebase deploy -P file-8d723 --token "$FIREBASE_DEPLOY_TOKEN"'
+          sh 'firebase deploy -P file-8d723 --token "$FIREBASE_DEPLOY_TOKEN"'
 
          
 
@@ -24,7 +24,7 @@ pipeline{
         } 
         stage('Production Environment'){
             steps{
-            // sh 'firebase deploy -P class-stage-1 --token "$FIREBASE_DEPLOY_TOKEN"'
+            sh 'firebase deploy -P class-stage-1 --token "$FIREBASE_DEPLOY_TOKEN"'
             echo 'Production'
             }
         } 
