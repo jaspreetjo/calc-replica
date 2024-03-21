@@ -8,19 +8,19 @@ pipeline{
        
         stage('Testing Environment'){
             steps{
-            sh 'firebase deploy -P hifi-30b70 "$FIREBASE_DEPLOY_TOKEN"'
+            sh 'firebase deploy -P hifi-30b70 --token "$FIREBASE_DEPLOY_TOKEN"'
             
             }
         } 
         stage('Staging Environment'){
             steps{
-           //  sh 'firebase deploy -P class-stage-1 --token "$FIREBASE_DEPLOY_TOKEN"'
+           //  sh 'firebase deploy -P file-8d723 --token "$FIREBASE_DEPLOY_TOKEN"'
              echo  'Building'
             }
         } 
         stage('Production Environment'){
             steps{
-            // sh 'firebase deploy -P production-ce --token "$FIREBASE_DEPLOY_TOKEN"'
+            // sh 'firebase deploy -P class-stage-1 --token "$FIREBASE_DEPLOY_TOKEN"'
             echo 'Production'
             }
         } 
